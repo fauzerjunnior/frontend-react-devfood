@@ -8,7 +8,7 @@ interface ActionCardProps {
 export const Container = styled.div`
   min-height: 95vh;
   height: auto;
-  background: #f7f7f7;
+  background: #fff;
 `;
 
 export const Content = styled.main`
@@ -31,6 +31,10 @@ export const PrimaryContent = styled.div`
     font-family: 'Average Sans';
     font-weight: 700;
     margin-top: 110px;
+
+    @media (max-width: 500px) {
+      margin-top: 65px;
+    }
   }
 
   h3 {

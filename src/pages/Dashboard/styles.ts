@@ -24,11 +24,20 @@ export const PrimaryContent = styled.div`
   justify-content: flex-start;
   align-items: center;
 
+  @media (max-width: 500px) {
+    height: 300px;
+    padding: 10px 30px;
+  }
+
   h1 {
     font-size: 44px;
     font-family: 'Average Sans';
     font-weight: 700;
     margin-top: 110px;
+
+    @media (max-width: 500px) {
+      margin-top: 50px;
+    }
   }
 
   h3 {
@@ -44,6 +53,11 @@ export const SecondaryContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 500px) {
+    display: block;
+    margin: 0px 30px;
+  }
 `;
 
 export const CardItem = styled.div`
@@ -62,6 +76,11 @@ export const CardItem = styled.div`
   min-height: 220px;
   margin: -100px 20px 100px;
   transition: 0.3s opacity;
+
+  @media (max-width: 500px) {
+    margin: 80px 0px;
+    width: 100%;
+  }
 
   + div {
     background: #b6d048;
@@ -132,6 +151,16 @@ export const TopBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    padding: 0px 30px;
+    width: 500px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    margin-right: 30px;
+  }
 `;
 
 export const ViewMoreLink = styled.div`

@@ -12,6 +12,10 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
 
+  @media (max-width: 1100px) {
+    margin: 0 50px;
+  }
+
   div + div {
     margin-left: auto;
   }
@@ -40,6 +44,10 @@ export const Profile = styled.div`
   display: flex;
   align-items: center;
   margin-left: 80px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 
   a {
     text-decoration: none;
